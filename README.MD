@@ -31,15 +31,15 @@ such as Greenlock.js or ACME.js.
 import Greenlock from 'greenlock-express'
 
 const greenlock = Greenlock.create({
-	challenges: {
-		'dns-01': dns01({
+    challenges: {
+        'dns-01': dns01({
             domain,
             token,
             secret,
             propagationTimeout: 3000, // (optional)
             propagationDelay: 5000 // (optional)
         })
-	}
+    }
 })
 ```
 
